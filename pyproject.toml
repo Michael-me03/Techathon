@@ -1,0 +1,59 @@
+[project]
+name = "similar-question-search"
+version = "1.1.0"
+description = "GenAI Model Performance Evaluation Framework -- Similar Question Search: finds earlier financial-analytics questions that ask the same thing as a new one, using an LLM (Gemini via OpenRouter) over a harmonized historical dataset."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary -- academic project (SRH Heidelberg University), not for redistribution" }
+
+dependencies = [
+    "pandas>=2.0.0,<3.0.0",
+    "openpyxl>=3.1.0,<4.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+    "openai>=1.52.0,<2.0.0",
+    "requests>=2.31.0,<3.0.0",
+    # dash-mantine-components 2.x's own published metadata only claims
+    # "dash>=2", but its dev/CI extra pins "dash>=4" and its component
+    # bundle was found (by hand, on a real install) to render a BLANK page
+    # against Dash 2.x -- no error, just nothing on screen. Pinning >=4.0.0
+    # here matches the version this app was actually verified to run on;
+    # do not lower this without re-testing the UI actually renders.
+    "dash>=4.0.0,<5.0.0",
+    "dash-mantine-components>=2.0.0,<3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-mock>=3.12.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.6.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+# Keep this to the rules that catch real bugs (unused imports/vars, obvious
+# mistakes) rather than pure style nits -- the goal is a CI check that
+# reliably fails on real problems, not one so strict it needs constant
+# per-line exceptions.
+select = ["E", "F", "W", "B"]
+ignore = [
+    "E501",  # line length -- handled loosely via line-length above, not a hard gate
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["app"]
+
+[tool.setuptools.packages.find]
+include = ["src*", "config*"]

@@ -1,0 +1,38 @@
+flowchart TD
+    Evaluator(["Evaluator<br/>bank employee · browser"])
+    Gate["1 . Evaluator-name gate<br/>modal · session store"]
+    SearchUI["2 . Search box<br/>+ example questions"]
+    SearchLogic["3 . search_similar_questions()<br/>src/search/similarity_search.py"]
+    Harmonizer["harmonize_text() / harmonize_dataframe()<br/>src/harmonizer/"]
+    GeminiClient["4 . GeminiClient<br/>src/llm/gemini_client.py"]
+    OpenRouter{{"5 . OpenRouter API<br/>google/gemini-3.8-flash"}}
+    ResultsUI["6 . Results view<br/>match cards · stats"]
+    UsageLog["record_search()<br/>src/usage_log.py"]
+    Logs[("logs/usage_YYYY-MM-DD.jsonl")]
+
+    subgraph Data["Data & config on disk"]
+        direction LR
+        Raw[("Dataset_Raw.xlsx")]
+        Dicts[("harmonization_*.csv")]
+        Harmonized[("Dataset_Harmonized.csv")]
+        Instr[/"similarity_instructions.txt"/]
+        Settings[("settings.py")]
+    end
+
+    Evaluator --> Gate --> SearchUI --> SearchLogic
+    SearchLogic -- normalizes new question via --> Harmonizer
+    Harmonizer --- Data
+    SearchLogic -- reads --> Data
+    SearchLogic --> GeminiClient --> OpenRouter
+    GeminiClient --> ResultsUI --> Evaluator
+    SearchLogic -. every search logged .-> UsageLog -. appends .-> Logs
+
+    classDef ui fill:#eef2ff,stroke:#4f46e5,stroke-width:1px,color:#1e1b4b;
+    classDef core fill:#f0fdf4,stroke:#16a34a,stroke-width:1px,color:#052e16;
+    classDef data fill:#fefce8,stroke:#ca8a04,stroke-width:1px,color:#422006;
+    classDef ext fill:#fdf2f8,stroke:#db2777,stroke-width:1px,color:#500724;
+
+    class Gate,SearchUI,ResultsUI ui;
+    class Harmonizer,SearchLogic,GeminiClient,UsageLog core;
+    class Raw,Dicts,Harmonized,Instr,Settings,Logs data;
+    class OpenRouter ext;

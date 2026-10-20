@@ -1,0 +1,28 @@
+# Production dependencies, used by the Dockerfile and for a plain
+# `pip install -r requirements.txt`. This list is kept in sync with the
+# [project.dependencies] table in pyproject.toml -- pyproject.toml is the
+# source of truth for local/dev installs (`pip install -e ".[dev]"`), this
+# file exists so the Docker image build doesn't need setuptools/pip's
+# editable-install machinery, just a flat, fast `pip install`.
+#
+# For running the test suite too, use pyproject.toml's dev extra instead:
+#   pip install -e ".[dev]"
+
+# --- Harmonization ---
+pandas>=2.0.0,<3.0.0
+openpyxl>=3.1.0,<4.0.0
+
+# --- Config / environment ---
+python-dotenv>=1.0.0,<2.0.0
+
+# --- Model API (OpenRouter, OpenAI-compatible endpoint) ---
+openai>=1.52.0,<2.0.0
+requests>=2.31.0,<3.0.0
+
+# --- UI ---
+# dash-mantine-components 2.x needs Dash 4.x to actually render (its own
+# metadata only claims "dash>=2", but that's loose -- verified by hand that
+# Dash 2.x installs cleanly alongside it and then renders a BLANK page with
+# no error). Do not lower this without re-testing the UI actually renders.
+dash>=4.0.0,<5.0.0
+dash-mantine-components>=2.0.0,<3.0.0

@@ -1,0 +1,32 @@
+# Secrets -- never commit real credentials.
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Test / lint caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS / editor cruft
+.DS_Store
+__MACOSX/
+.vscode/
+
+# NOTE: outputs/ and logs/ are intentionally NOT ignored here. Both are
+# normally regenerated at runtime (outputs/Dataset_Harmonized.csv on every
+# search, logs/usage_*.jsonl on every search a real evaluator runs), but the
+# ones currently committed are kept as evidence that the pipeline and the
+# audit-logging feature actually work end to end, for this project's
+# academic submission. Feel free to re-add "outputs/*.csv", "outputs/*.txt"
+# and "logs/*.jsonl" here once that's no longer needed (e.g. for the bank
+# handoff, where a fresh deployment should start with empty logs).

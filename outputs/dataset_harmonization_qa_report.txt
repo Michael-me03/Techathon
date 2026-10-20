@@ -1,0 +1,272 @@
+HARMONIZATION QA REPORT
+============================================================
+
+Total substitutions made : 4298
+Unique alias->canonical  : 264
+
+Substitutions (sorted by frequency)
+------------------------------------------------------------
+    324x   roe -> Return on Equity
+    264x   cir -> Cost-Income Ratio
+    153x   asset management -> Asset Management
+    148x   transaction banking -> Transaction Banking
+    136x   change -> Change Analysis
+    134x   retail banking -> Retail Banking
+    127x   private banking -> Private Banking
+    121x   overall -> Global
+    119x   cost -> Cost
+     99x   wealth management -> Wealth Management
+     90x   revenue -> Revenue
+     85x   order -> Rank
+     58x   ranking -> Rank
+     53x   equity return -> Return on Equity
+     50x   nim -> Net Interest Margin
+     47x   strongest -> Highest
+     47x   pull -> Show
+     46x   movement -> Trend Analysis
+     46x   shift -> Trend Analysis
+     42x   shareholder return -> Return on Equity
+     37x   return on shareholders equity -> Return on Equity
+     36x   corp bank -> Corporate Banking
+     31x   rank -> Rank
+     30x   smallest change -> Rank
+     30x   between -> Between
+     30x   biggest change -> Rank
+     29x   equity returns -> Return on Equity
+     29x   period -> Reporting Period
+     28x   txb -> Transaction Banking
+     27x   investment bank -> Investment Banking
+     26x   ib -> Investment Banking
+     25x   trade finance -> Transaction Banking
+     25x   dws -> Asset Management
+     25x   am -> Asset Management
+     24x   income -> Revenue
+     24x   cb -> Corporate Banking
+     24x   corproate bank -> Corporate Banking
+     24x   return for shareholders -> Return on Equity
+     24x   txn banking -> Transaction Banking
+     24x   cost income ratio -> Cost-Income Ratio
+     23x   wm -> Wealth Management
+     22x   ibd -> Investment Banking
+     22x   rb -> Retail Banking
+     21x   direction -> Trend Analysis
+     21x   cost to income ratio -> Cost-Income Ratio
+     21x   pb -> Private Banking
+     20x   w&m -> Wealth Management
+     20x   portfolio mgmt -> Portfolio Management
+     20x   return on equity -> Return on Equity
+     19x   retail bank -> Retail Banking
+     19x   invest bank -> Investment Banking
+     19x   port management -> Portfolio Management
+     19x   private clients -> Private Banking
+     19x   asset mgmt -> Asset Management
+     18x   retail -> Retail Banking
+     18x   benchmark -> Compare
+     18x   cost-income ratio -> Cost-Income Ratio
+     17x   corp banking -> Corporate Banking
+     17x   wealth mgmt -> Wealth Management
+     17x   global markets -> Markets
+     17x   pm -> Portfolio Management
+     16x   gtb -> Transaction Banking
+     16x   juxtapose -> Compare
+     16x   ficc -> Fixed Income and Currencies
+     16x   rev -> Revenue
+     16x   show me -> Show
+     15x   lowest -> Lowest
+     15x   trading -> Markets
+     15x   me -> Month End
+     15x   private wealth -> Wealth Management
+     15x   market division -> Markets
+     15x   corporate bank -> Corporate Banking
+     15x   wholesale bank -> Wholesale Banking
+     15x   the group -> Deutsche Bank Group
+     15x   standout -> Outlier Detection
+     14x   c/i ratio -> Cost-Income Ratio
+     14x   compare -> Compare
+     14x   fund mgmt -> Asset Management
+     14x   consumer bank -> Consumer Banking
+     14x   port mgmt -> Portfolio Management
+     14x   weigh up -> Compare
+     13x   gb -> Global Banking
+     13x   ci ratio -> Cost-Income Ratio
+     13x   retail segment -> Retail Banking
+     13x   top line -> Revenue
+     12x   increase -> Improvement
+     12x   wealth clients -> Wealth Management
+     12x   portfolio division -> Portfolio Management
+     12x   all divisions -> Group
+     12x   ultra high net worth -> Private Banking
+     12x   c/i -> Cost-Income Ratio
+     12x   pm division -> Portfolio Management
+     12x   private bank -> Private Banking
+     12x   asset mgt -> Asset Management
+     12x   cib -> Investment Banking
+     11x   hnw -> Private Banking
+     11x   contrast -> Compare
+     11x   high street banking -> Retail Banking
+     11x   cir ratio -> Cost-Income Ratio
+     11x   investments -> Portfolio Management
+     11x   total income -> Revenue
+     11x   payments -> Transaction Banking
+     10x   inv bank -> Investment Banking
+     10x   cost efficiency ratio -> Cost-Income Ratio
+     10x   2025 q3 -> Q3 2025
+     10x   sales and trading -> Markets
+     10x   q3 25 -> Q3 2025
+     10x   1q26 -> Q1 2026
+     10x   total revenue -> Revenue
+     10x   global transaction banking -> Transaction Banking
+     10x   q4 25 -> Q4 2025
+      9x   q3_2025 -> Q3 2025
+      9x   expenditure -> Cost
+      9x   corporate division -> Corporate Banking
+      9x   expense -> Cost
+      9x   expenses -> Cost
+      9x   3q25 -> Q3 2025
+      8x   cost/income -> Cost-Income Ratio
+      8x   revenues -> Revenue
+      8x   fund management -> Asset Management
+      7x   operating cost -> Cost
+      7x   q3-25 -> Q3 2025
+      7x   q1_2025 -> Q1 2025
+      7x   retail franchise -> Retail Banking
+      7x   cost base -> Cost
+      7x   jul-sep 2025 -> Q3 2025
+      7x   q3fy25 -> Q3 2025
+      7x   high net worth -> Private Banking
+      7x   priv bank -> Private Banking
+      7x   uhnw -> Private Banking
+      7x   opex -> Cost
+      7x   vs -> Versus
+      6x   gross income -> Revenue
+      6x   january to march 2025 -> Q1 2025
+      6x   q1 26 -> Q1 2026
+      6x   third quarter 2025 -> Q3 2025
+      6x   give me -> Show
+      6x   2025 q4 -> Q4 2025
+      6x   4q25 -> Q4 2025
+      6x   first quarter 2025 -> Q1 2025
+      6x   investment banking arm -> Investment Banking
+      6x   last quarter 2025 -> Q4 2025
+      6x   lending margin -> Net Interest Margin
+      6x   q4_2025 -> Q4 2025
+      6x   efficiency ratio -> Cost-Income Ratio
+      5x   mid 2025 -> Q2 2025
+      5x   first quarter 2026 -> Q1 2026
+      5x   q1_2026 -> Q1 2026
+      5x   net int margin -> Net Interest Margin
+      5x   july to september 2025 -> Q3 2025
+      5x   operating expenses -> Cost
+      5x   hnwi banking -> Private Banking
+      5x   consumer banking -> Consumer Banking
+      5x   jan-mar 2025 -> Q1 2025
+      5x   2026 q1 -> Q1 2026
+      5x   q1-26 -> Q1 2026
+      5x   fixed inc curr -> Fixed Income and Currencies
+      5x   q1fy26 -> Q1 2026
+      5x   1q25 -> Q1 2025
+      5x   trend -> Trend Analysis
+      4x   apr-jun 2025 -> Q2 2025
+      4x   q4fy25 -> Q4 2025
+      4x   cost income -> Cost-Income Ratio
+      4x   2025 q1 -> Q1 2025
+      4x   2025 q2 -> Q2 2025
+      4x   interest margin -> Net Interest Margin
+      4x   oct-dec 2025 -> Q4 2025
+      4x   q1-25 -> Q1 2025
+      4x   april to june 2025 -> Q2 2025
+      4x   q42025 -> Q4 2025
+      4x   net interest margin -> Net Interest Margin
+      4x   early 2025 -> Q1 2025
+      4x   q4-25 -> Q4 2025
+      4x   net margin -> Net Interest Margin
+      4x   fy25 -> FY 2025
+      3x   q2-25 -> Q2 2025
+      3x   jan-mar 2026 -> Q1 2026
+      3x   q1 25 -> Q1 2025
+      3x   2q25 -> Q2 2025
+      3x   decrease -> Decline
+      3x   q1fy25 -> Q1 2025
+      3x   fic -> Fixed Income and Currencies
+      3x   total costs -> Cost
+      3x   lending spread -> Spread
+      3x   over -> Greater Than
+      3x   the lowest -> Lowest
+      3x   costs -> Cost
+      3x   1q2026 -> Q1 2026
+      3x   outlier -> Outlier Detection
+      3x   where -> Filter
+      3x   better -> Improvement
+      2x   ni margin -> Net Interest Margin
+      2x   january to march 2026 -> Q1 2026
+      2x   q2 25 -> Q2 2025
+      2x   q2fy25 -> Q2 2025
+      2x   show -> Show
+      2x   october to december 2025 -> Q4 2025
+      2x   qtr3 25 -> Q3 2025
+      2x   q3'25 -> Q3 2025
+      2x   rwa -> Risk Weighted Assets
+      2x   aum -> Assets Under Management
+      2x   eps -> Earnings Per Share
+      2x   pcg -> Private Client Group
+      2x   gts -> Transaction Banking
+      2x   sva -> Shareholder Value Add
+      2x   raroc -> Risk-Adjusted Return on Capital
+      2x   rbb -> Retail Banking and Brokerage
+      1x   fourth quarter 2025 -> Q4 2025
+      1x   q12026 -> Q1 2026
+      1x   second quarter 2025 -> Q2 2025
+      1x   put side by side -> Compare
+      1x   fixed income & currencies -> Fixed Income and Currencies
+      1x   fixed income currencies -> Fixed Income and Currencies
+      1x   rates and fx -> Fixed Income and Currencies
+      1x   interest spread -> Net Interest Margin
+      1x   q4'25 -> Q4 2025
+      1x   fy2025 -> FY 2025
+      1x   corp centre -> Corporate Centre
+      1x   cet1 ratio -> CET1 Ratio
+      1x   growth -> Growth Rate
+      1x   llp -> Loan Loss Provision
+      1x   npl -> Non-Performing Loans
+      1x   jun -> June
+      1x   jan -> January
+      1x   lcr -> Liquidity Coverage Ratio
+      1x   em -> Emerging Markets
+      1x   retial bank -> Retail Banking
+      1x   net profit -> Net Profit
+      1x   fy24 -> FY 2024
+      1x   payout ratio -> Payout Ratio
+      1x   dy -> Dividend Yield
+      1x   h2 25 -> H2 2025
+      1x   txn bank -> Transaction Banking
+      1x   dec -> December
+      1x   commodity bank -> Commodities
+      1x   net interest income -> Net Interest Income
+      1x   h1 26 -> H1 2026
+      1x   wlth -> Wealth Management
+      1x   break down -> Explain
+      1x   ecl coverage -> ECL Coverage Ratio
+      1x   cor -> Cost of Credit
+      1x   risk-adjusted returns -> Sharpe Ratio
+      1x   credit flow -> Credit Trading
+      1x   macro book -> Macro Trading
+      1x   sharpe -> Sharpe Ratio
+      1x   mtd pnl attribution -> PnL Attribution
+      1x   dps -> Dividend Per Share
+      1x   jaws ratio -> Operating Jaws
+      1x   ppop -> Pre-Provision Profit
+      1x   improved -> Improvement
+      1x   nbfi desk -> Non-Bank Financial Institutions
+      1x   wmg -> Wealth Management Group
+      1x   rotce -> Return on Tangible Equity
+      1x   deposit beta -> Deposit Beta
+      1x   ftp-adjusted nii -> Funds Transfer Pricing
+      1x   hurdle rate -> Hurdle Rate
+      1x   above -> Greater Than
+      1x   sponsor finance -> Financial Sponsors Group
+      1x   levfin -> Leveraged Finance
+      1x   operating leverage -> Operating Leverage
+      1x   credit -> Loans
+      1x   weaker -> Decline
+      1x   coverage ratio -> Stage 3 Coverage Ratio
+      1x   stage 3 ratio -> Stage 3 Ratio

@@ -1,0 +1,44 @@
+# Secrets -- never bake a real key into the image. Set GEMINI_API_KEY (and
+# any other env vars) through Portainer's "Env" tab at deploy time instead.
+.env
+
+# Version control / CI -- not needed inside the running container.
+.git/
+.github/
+
+# Python cruft
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Test / lint -- not needed at runtime, only for CI.
+tests/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS / editor cruft
+.DS_Store
+__MACOSX/
+.vscode/
+
+# Generated data -- regenerated automatically on container start (app.py
+# runs the harmonizer if outputs/Dataset_Harmonized.csv is missing) and on
+# every search after that, so shipping the current copy in the image just
+# bloats it and can go stale. logs/ starts empty in the image; mount a
+# volume over it in Portainer so real usage logs persist across restarts
+# (see README.md -> Deploying section).
+outputs/*.csv
+outputs/*.txt
+logs/*.jsonl
+
+# Docs / diagrams -- useful in the repo, not needed inside the image.
+README.md
+architecture.mmd
+architecture_diagram.png
